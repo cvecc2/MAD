@@ -55,9 +55,9 @@ class ViewController: UIViewController, UITextFieldDelegate {
             //create a UIAlertController object
             let alert=UIAlertController(title: "Warning", message: "The number of passengers must be greater than 0", preferredStyle: UIAlertController.Style.alert)
             //create a UIAlertAction object for the button
-            let cancelAction=UIAlertAction(title: "Cancel", style:UIAlertAction.Style.cancel, handler: nil)
+            let cancelAction=UIAlertAction(title: "Ignore", style:UIAlertAction.Style.cancel, handler: nil)
             alert.addAction(cancelAction) //adds the alert action to the alert object
-            let okAction=UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: {action in
+            let okAction=UIAlertAction(title: "1 Passenger", style: UIAlertAction.Style.default, handler: {action in
                 self.passengerStepper.value = 1
                 self.passengerLabel.text? = "1 Passenger"
                 self.updateCostTotal()
