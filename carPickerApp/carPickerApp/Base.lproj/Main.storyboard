@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="carPickerApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="b77-XV-KhX">
+                                <rect key="frame" x="35" y="34" width="250" height="228.5"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Aw1-1e-3Cq">
+                                        <rect key="frame" x="0.0" y="0.0" width="250" height="57"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Which Audi Should You Buy?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AB6-Cb-46E">
+                                                <rect key="frame" x="0.0" y="0.0" width="250" height="20.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="dq4-rB-WiS"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="MKu-1X-A4h">
+                                                <rect key="frame" x="0.0" y="28.5" width="250" height="29.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="3wn-DV-jFT"/>
+                                                </constraints>
+                                                <segments>
+                                                    <segment title="Cars"/>
+                                                    <segment title="SUVs"/>
+                                                    <segment title="Trucks"/>
+                                                </segments>
+                                                <connections>
+                                                    <action selector="bodyStylePicker:" destination="BYZ-38-t0r" eventType="valueChanged" id="EXA-sz-Oyc"/>
+                                                </connections>
+                                            </segmentedControl>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Zc8-bg-Vs1">
+                                        <rect key="frame" x="0.0" y="76" width="250" height="70"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Max Budget:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cHM-v5-hdZ">
+                                                <rect key="frame" x="88" y="0.0" width="74" height="15"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="71.5" id="YtO-aI-MYS"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="67000" minValue="33300" maxValue="100000" translatesAutoresizingMaskIntoConstraints="NO" id="5Mo-Z9-skl">
+                                                <rect key="frame" x="-2" y="20" width="254" height="31.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="250" id="YrF-5P-Hbu"/>
+                                                </constraints>
+                                                <connections>
+                                                    <action selector="maxBudgetSlider:" destination="BYZ-38-t0r" eventType="valueChanged" id="VuL-Dw-6hc"/>
+                                                </connections>
+                                            </slider>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$67000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pZw-c8-DXF">
+                                                <rect key="frame" x="102.5" y="55.5" width="45" height="14.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="5Mo-Z9-skl" firstAttribute="top" secondItem="Zc8-bg-Vs1" secondAttribute="top" constant="20" symbolic="YES" id="8PT-la-koG"/>
+                                            <constraint firstAttribute="trailing" secondItem="cHM-v5-hdZ" secondAttribute="trailing" constant="88" id="KzN-yb-Roj"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="gKt-uk-vHH">
+                                        <rect key="frame" x="0.0" y="165" width="250" height="63.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Min. MPG:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7L1-0Q-Log">
+                                                <rect key="frame" x="89" y="0.0" width="72" height="12"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="72" id="C8U-T1-tpb"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="25" minValue="0.0" maxValue="50" translatesAutoresizingMaskIntoConstraints="NO" id="37a-nq-j9u">
+                                                <rect key="frame" x="-2" y="20" width="254" height="24.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="250" id="25K-xm-wIH"/>
+                                                </constraints>
+                                                <connections>
+                                                    <action selector="minMPGSlider:" destination="BYZ-38-t0r" eventType="valueChanged" id="0cY-sX-DEw"/>
+                                                </connections>
+                                            </slider>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="25 MPG" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dbm-n7-qTe">
+                                                <rect key="frame" x="89" y="51.5" width="72" height="12"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="72" id="GVj-Zg-sIe"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="37a-nq-j9u" firstAttribute="top" secondItem="gKt-uk-vHH" secondAttribute="top" constant="20" symbolic="YES" id="8ue-x7-Vh7"/>
+                                            <constraint firstItem="37a-nq-j9u" firstAttribute="centerY" secondItem="gKt-uk-vHH" secondAttribute="centerY" id="Um4-Zn-GZ9"/>
+                                            <constraint firstItem="dbm-n7-qTe" firstAttribute="top" secondItem="7L1-0Q-Log" secondAttribute="bottom" constant="39.5" id="nif-aI-beT"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="gKt-uk-vHH" firstAttribute="top" secondItem="b77-XV-KhX" secondAttribute="top" constant="165" id="fwm-8x-2xS"/>
+                                    <constraint firstItem="Zc8-bg-Vs1" firstAttribute="top" secondItem="b77-XV-KhX" secondAttribute="top" constant="76" id="ptL-aO-RuZ"/>
+                                </constraints>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Audi-Logo-PNG-Image" translatesAutoresizingMaskIntoConstraints="NO" id="Q1Y-LR-zaZ">
+                                <rect key="frame" x="16" y="299" width="288" height="153"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="153" id="R6H-Cx-ZlU"/>
+                                    <constraint firstAttribute="width" constant="259" id="wxm-01-Rnn"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="wxm-01-Rnn"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="wxm-01-Rnn"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="hYO-IY-6o6">
+                                <rect key="frame" x="16" y="460" width="288" height="76.5"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="iX1-E1-KtG">
+                                        <rect key="frame" x="0.0" y="0.0" width="288" height="20.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Make" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V8N-a0-eCh">
+                                                <rect key="frame" x="0.0" y="0.0" width="91" height="20.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="91" id="9NC-eM-D4q"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Model" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xCw-bW-Mjl">
+                                                <rect key="frame" x="97" y="0.0" width="68" height="20.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="68" id="YDT-MH-6gH"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IDL-cC-lxk">
+                                                <rect key="frame" x="171" y="0.0" width="117" height="20.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="117" id="o51-3B-u1y"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="twu-lB-w2B">
+                                        <rect key="frame" x="103" y="46.5" width="82" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="82" id="0ar-QJ-Cep"/>
+                                            <constraint firstAttribute="height" constant="30" id="Sf9-JA-Xj6"/>
+                                        </constraints>
+                                        <state key="normal" title="Learn More"/>
+                                        <connections>
+                                            <action selector="carRandomizerButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1qm-Lb-gwo"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="b77-XV-KhX" secondAttribute="trailing" constant="35" id="0CH-u2-IRL"/>
+                            <constraint firstItem="Q1Y-LR-zaZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="3PP-TH-L83"/>
+                            <constraint firstItem="Aw1-1e-3Cq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="14" id="Br0-z4-Wu1">
+                                <variation key="heightClass=regular-widthClass=regular" constant="45"/>
+                            </constraint>
+                            <constraint firstItem="b77-XV-KhX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Lce-GR-Oaa"/>
+                            <constraint firstItem="hYO-IY-6o6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Oll-ur-bAj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hYO-IY-6o6" secondAttribute="trailing" constant="16" id="UkQ-nc-e2f"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="hYO-IY-6o6" secondAttribute="bottom" constant="31.5" id="XfW-7x-gx9">
+                                <variation key="heightClass=regular-widthClass=regular" constant="55.5"/>
+                            </constraint>
+                            <constraint firstItem="hYO-IY-6o6" firstAttribute="top" secondItem="Q1Y-LR-zaZ" secondAttribute="bottom" constant="8" id="Z5l-Hq-03q"/>
+                            <constraint firstItem="hYO-IY-6o6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="b8P-W7-2ah"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="hYO-IY-6o6" secondAttribute="bottom" constant="0.5" id="ffY-Wu-xts"/>
+                            <constraint firstItem="Q1Y-LR-zaZ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="26" id="jJz-Su-h9d"/>
+                            <constraint firstItem="hYO-IY-6o6" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="460" id="qq7-5K-WQx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Q1Y-LR-zaZ" secondAttribute="trailing" constant="16" id="szE-WS-TaV"/>
+                            <constraint firstItem="b77-XV-KhX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="35" id="tQe-sv-yQp"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="ffY-Wu-xts"/>
+                                <exclude reference="Lce-GR-Oaa"/>
+                                <exclude reference="jJz-Su-h9d"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="constraints">
+                                <exclude reference="0CH-u2-IRL"/>
+                                <exclude reference="XfW-7x-gx9"/>
+                                <include reference="ffY-Wu-xts"/>
+                                <exclude reference="3PP-TH-L83"/>
+                                <include reference="jJz-Su-h9d"/>
+                                <exclude reference="Oll-ur-bAj"/>
+                                <exclude reference="Z5l-Hq-03q"/>
+                                <exclude reference="b8P-W7-2ah"/>
+                                <exclude reference="qq7-5K-WQx"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular">
+                            <mask key="constraints">
+                                <exclude reference="Lce-GR-Oaa"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="carImageArea" destination="Q1Y-LR-zaZ" id="bY5-IS-IUT"/>
+                        <outlet property="changeCarType" destination="MKu-1X-A4h" id="Aob-0j-xjJ"/>
+                        <outlet property="changeImage" destination="MKu-1X-A4h" id="ZgN-np-cJ7"/>
+                        <outlet property="makeText" destination="V8N-a0-eCh" id="Y4Q-sv-Mfq"/>
+                        <outlet property="modelText" destination="xCw-bW-Mjl" id="3af-yW-7y3"/>
+                        <outlet property="mpgOutlet" destination="dbm-n7-qTe" id="2i8-xO-oZE"/>
+                        <outlet property="mpgValue" destination="37a-nq-j9u" id="ywX-la-hWb"/>
+                        <outlet property="priceOutput" destination="pZw-c8-DXF" id="8uX-Wl-7H5"/>
+                        <outlet property="priceText" destination="IDL-cC-lxk" id="DbQ-KM-aqt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-60" y="136.26760563380282"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Audi-Logo-PNG-Image" width="1021" height="576"/>
+    </resources>
+</document>
