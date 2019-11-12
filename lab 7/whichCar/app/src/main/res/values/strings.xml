@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">CarPicker</string>
+    <string name="heading">Which Car?</string>
+    <string name="find_button">Find a Car</string>
+    <string name="bodystyle">Body Style</string>
+    <string name="japanese">Japanese Cars</string>
+    <string name="american">American Cars</string>
+    <string-array name="bodystyle">
+        <item>sports car</item>
+        <item>passenger car</item>
+        <item>suv</item>
+    </string-array>
+    <string name="radio1">$</string>
+    <string name="radio2">$$</string>
+    <string name="radio3">$$$</string>
+    <string name="AWD">AWD?</string>
+    <string name="heated">Heated Seats?</string>
+    <string name="hybrid">Hybrid/Electric?</string>
+    <string name="conv">Convertible?</string>
+</resources>
