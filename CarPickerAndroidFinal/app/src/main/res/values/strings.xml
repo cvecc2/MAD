@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Which Car\?</string>
+    <string name="car_title">"Cars</string>
+    <string name="SUV_title">"SUVs</string>
+    <string name="sports_title">"Sports Cars</string>
+    <string name="moneyslider">"Max. Budget</string>
+    <string name="mpgslider">"Min. MPG</string>
+    <string name="title">"Which Car Should You Buy?</string>
+    <string name="buttongo">"Go!</string>
+    <string name="vehicle_name_display">"vehicleSelection</string>
+    <string name="image_descriptor">"An image of your recommended vehicle</string>
+    <string name= "seekBudgetValue">"seekBudgetValue</string>
+    <string name= "seekMPGValue">"seekMPGValue</string>
+</resources>
