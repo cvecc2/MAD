@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">MADBurritoFinal</string>
+    <string name="heading">Burrito Finder</string>
+    <string name="toggle_on">Burrito</string>
+    <string name="toggle_off">Taco</string>
+    <string name="name_input">Name</string>
+    <string name="button_name">Build</string>
+    <string name="switch_label">Spicy?</string>
+
+    <string name="radio1">Cheap</string>
+    <string name="radio2">Midrange</string>
+    <string name="radio3">Fancy</string>
+
+    <string-array name="foodShop">
+        <item>The Hill</item>
+        <item>29th Street</item>
+        <item>Pearl Street</item>
+    </string-array>
+    <string name="title_activity_food_shop">FoodShop</string>
+
+    <string name="suggested_restaurant">This is your suggested restaurant</string>
+
+    <string name ="findAshop">Find Food</string>
+
+</resources>
